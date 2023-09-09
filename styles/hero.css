@@ -1,0 +1,99 @@
+.hero-section {
+    margin-top: 2rem;
+    padding: 20px 40px;
+}
+
+.hero-image {
+    border-radius: 170.859px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.title {
+    color: #21243D;
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px; 
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #21243D;
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    border-radius: 2px;
+    background: #FF6464;
+    border: 1px solid #FF6464;
+    padding: 8px 25px;
+    color: #FFF;
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+@media (min-width: 992px) {
+    .hero-section {
+    margin-top: 2rem;
+    padding: 40px 120px;
+}
+
+.hero-container {
+    gap: 4rem;
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+}
+
+.hero-text {
+    text-align: left;
+    margin-top: 4rem;
+}
+
+.title {
+    color: #21243D;
+    text-align: left;
+    font-family: "Heebo", sans-serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 60px; 
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #21243D;
+    text-align: left;
+    font-family: "Heebo", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    border-radius: 2px;
+    background: #FF6464;
+    border: 1px solid #FF6464;
+    padding: 8px 25px;
+    color: #FFF;
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+}
