@@ -13,16 +13,12 @@
     text-align: center;
 }
 
-.image {
-    /* width: 50%; */
-}
-
 .hero-text {
     text-align: center;
 }
 
 .title {
-    color: #21243D;
+    color: var(--primary-color);
     text-align: center;
     font-family: "Heebo", sans-serif;
     font-size: 2rem;
@@ -32,7 +28,7 @@
 }
 
 .description {
-    color: #21243D;
+    color: var(--primary-color);
     text-align: center;
     font-family: "Heebo", sans-serif;
     font-size: 1rem;
@@ -42,10 +38,10 @@
 
 .hero-btn {
     border-radius: 2px;
-    background: #FF6464;
-    border: 1px solid #FF6464;
+    background: var(--button-background);
+    border: 1px solid var(--button-border);
     padding: 8px 25px;
-    color: #FFF;
+    color: var(--button-text);
     font-family: "Heebo", sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -79,9 +75,7 @@
 }
 
 .title {
-    color: #21243D;
     text-align: left;
-    font-family: "Heebo", sans-serif;
     font-size: 2.75rem;
     font-weight: 700;
     line-height: 60px; 
@@ -89,24 +83,6 @@
 }
 
 .description {
-    color: #21243D;
     text-align: left;
-    font-family: "Heebo", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-}
-
-.hero-btn {
-    border-radius: 2px;
-    background: #FF6464;
-    border: 1px solid #FF6464;
-    padding: 8px 25px;
-    color: #FFF;
-    font-family: "Heebo", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
-}
-
+ }
 }

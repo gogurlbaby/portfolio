@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="./styles//navbar.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
-     <!-- NavBar for Mobile -->
+     <!-- NavBar-->
+  <header>
     <nav>
-      <div class="navbar-mobile">
+      <div class="navbar">
         <div class="menu-button">
-          <i data-feather="menu" onclick="showOverlay()"></i>
+          <i data-feather="menu" onclick="showOverlay()"></i> 
         </div>
-         <!-- Overlay -->
-        <div class="overlay" id="overlay">
-          <ul class="mobile-menu">
+         <!-- Overlay for Small Screens-->
+        <div id="overlay">
+          <ul>
             <li><a href="#">Works</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
@@ -29,17 +31,7 @@
         </div>
       </div>
     </nav>
-
-    <!-- NavBar for Desktop-->
-  <nav>
-    <div class="navbar">
-        <ul class="menu-items">
-          <li><a href="#works">Works</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-  </nav>
+  </header>
 
    <!-- Hero Section -->
   <section class="hero-section">
@@ -54,18 +46,5 @@
    </div>
 </div>
   </section>
-
-  <script>
-    feather.replace();
-
-    function showOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-            document.getElementById("overlay").classList.add("slide-from-right"); // Add the CSS class for sliding from right to left
-        }
-        function hideOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-  </script>
 </body>
 </html>

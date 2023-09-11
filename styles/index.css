@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
 
+:root {
+  --primary-color: #21243D;
+  --link-color: #000;
+  --button-background: #FF6464;
+  --button-border: #FF6464;
+  --button-text: #FFF;
+  --overlay-background: rgba(0, 0, 0, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
