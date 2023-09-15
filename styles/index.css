@@ -7,6 +7,10 @@
   --button-border: #FF6464;
   --button-text: #FFF;
   --overlay-background: rgba(0, 0, 0, 0.8);
+  --Post-Background: #EDF7FA;
+  --View-Color: #00A8CC;
+  --Copyright-Color: #21243D;
+  --Light: #8695A4;
 }
 
 * {

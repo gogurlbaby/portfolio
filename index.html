@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles//navbar.css">
     <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/posts.css">
+    <link rel="stylesheet" href="./styles/featured.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <script src="https://unpkg.com/feather-icons"></script>
-    <script src="./index.js" defer></script>
+    <script src="./js/navbar.js" defer></script>
+    <script type="application/json" src="./data.json" id="data"></script>
+    <script src="./js/posts.js"></script>
 </head>
 <body>
      <!-- NavBar-->
@@ -46,5 +51,94 @@
    </div>
 </div>
   </section>
+
+   <!-- Posts Section -->
+   <section>
+    <div class="post-container">
+      <div class="title-container">
+        <h2>Recent Posts</h2>
+        <h6>View All</h6>
+      </div>
+      <div class="flex-container">
+        <div class="posts">
+          <h2 id="title" class="post-title">Making a design system from scratch</h2>
+          <div class="date-topic">
+            <p id="date" class="date">12 Feb 2020</p>
+            <span>|</span>
+            <p id="topic" class=""topic>Design, Pattern</p>
+          </div>
+          <p id="content" class="content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="posts">
+          <h2 id="title" class="post-title">Making a design system from scratch</h2>
+          <div class="date-topic">
+            <p id="date" class="date">12 Feb 2020</p>
+             <span>|</span>
+            <p id="topic" class=""topic>Figma, Icon Design</p>
+          </div>
+          <p id="content" class="content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+    </div>
+   </section>
+
+    <!-- Featured Works Section -->
+    <section>
+      <div class="featured_container">
+        <h2 class="featured-title">Featured Works</h2>
+        <div class="flex_wrapper">
+        <div class="wrapper">
+          <img src="./images/dashboard.svg" alt="image of work" class="image">
+          <div class="content_container">
+            <h4 class="work-title">Designing Dashboards</h4>
+            <div class="year-name">
+              <p class="year">2020</p>
+              <p class="name">Dashboard</p>
+            </div>
+              <p class="description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <img src="./images/portrait.svg" alt="image of work" class="image">
+          <div class="content_container">
+            <h4 class="work-title">Vibrant Portraits of 2020</h4>
+            <div class="year-name">
+              <p class="year">2018</p>
+              <p class="name">Illustration</p>
+            </div>
+              <p class="description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <img src="./images/Malayalam.svg" alt="image of work" class="image">
+          <div class="content_container">
+            <h4 class="work-title">36 Days of Malayalam type</h4>
+            <div class="year-name">
+              <p class="year">2018</p>
+              <p class="name">Typography</p>
+            </div>
+              <p class="description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="socials">
+          <img src="./images/fb.svg" alt="facebook icon" class="icon">
+          <img src="./images/insta.svg" alt="instagram icon" class="icon">
+          <img src="./images/twitter.svg" alt="twitter icon" class="icon">
+          <img src="./images/Linkedin.svg" alt="linkedin icon" class="icon">
+        </div>
+        <div class="copyright">
+          Copyright ©2023 All rights reserved 
+        </div>
+      </div>
+    </footer>
 </body>
 </html>

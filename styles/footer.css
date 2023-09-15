@@ -1,0 +1,31 @@
+.footer-container {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem 4.5rem;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.icon:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.copyright {
+    color: var(--Copyright-Color);
+    text-align: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (min-width: 992px) {
+    .footer-container {
+        padding: 3rem 20rem;
+    }
+}
