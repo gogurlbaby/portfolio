@@ -9,17 +9,22 @@
     gap: 1rem;
 }
 
-.hero-image {
+.image_wrapper {
     text-align: center;
 }
 
+.hero-image {
+    width: 243px;
+    border-radius: 170.859px;
+}
+
 .hero-text {
-    text-align: center;
+    text-align: center !important;
 }
 
 .title {
     color: var(--primary-color);
-    text-align: center;
+    text-align: center !important;
     font-family: "Heebo", sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -29,7 +34,7 @@
 
 .description {
     color: var(--primary-color);
-    text-align: center;
+    text-align: center !important;
     font-family: "Heebo", sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -60,22 +65,23 @@
     gap: 4rem;
 }
 
-.image {
-    width: 60%;
+.hero-image {
+    width: 243px;
+    border-radius: 243px;
 }
 
-.hero-image {
+.image_wrapper {
     order: 2;
 }
 
 .hero-text {
     order: 1;
-    text-align: left;
+    text-align: left !important;
     margin-top: 1rem;
 }
 
 .title {
-    text-align: left;
+    text-align: left !important;
     font-size: 2.75rem;
     font-weight: 700;
     line-height: 60px; 
@@ -83,6 +89,6 @@
 }
 
 .description {
-    text-align: left;
+    text-align: left !important;
  }
 }
