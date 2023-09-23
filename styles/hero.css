@@ -53,7 +53,7 @@
     cursor: pointer;
 }
 
-
+ /* Media Queries */
 @media (min-width: 992px) {
     .hero-section {
     margin-top: 2rem;
@@ -65,13 +65,13 @@
     gap: 4rem;
 }
 
+.image_wrapper {
+    order: 2;
+}
+
 .hero-image {
     width: 243px;
     border-radius: 243px;
-}
-
-.image_wrapper {
-    order: 2;
 }
 
 .hero-text {
