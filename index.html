@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles//navbar.css">
     <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/posts.css">
+    <link rel="stylesheet" href="./styles/featured.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="./js/navbar.js" defer></script>
+    <script type="application/json" src="./data.json" id="data"></script>
+    <script src="./js/posts.js"></script>
 </head>
 <body>
-     <!-- NavBar for Mobile -->
+     <!-- NavBar-->
+  <header>
     <nav>
-      <div class="navbar-mobile">
+      <div class="navbar">
         <div class="menu-button">
-          <i data-feather="menu" onclick="showOverlay()"></i>
+          <i data-feather="menu" onclick="showOverlay()"></i> 
         </div>
-         <!-- Overlay -->
-        <div class="overlay" id="overlay">
-          <ul class="mobile-menu">
+         <!-- Overlay for Small Screens-->
+        <div id="overlay">
+          <ul>
             <li><a href="#">Works</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Contact</a></li>
@@ -29,23 +36,13 @@
         </div>
       </div>
     </nav>
-
-    <!-- NavBar for Desktop-->
-  <nav>
-    <div class="navbar">
-        <ul class="menu-items">
-          <li><a href="#works">Works</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-  </nav>
+  </header>
 
    <!-- Hero Section -->
   <section class="hero-section">
     <div class="hero-container">
-   <div class="hero-image">
-     <img src="./images/image.jpg" alt="picture of Philia">
+   <div class="image_wrapper">
+     <img src="./images/linkedin.jpg" alt="picture of Philia" class="hero-image">
    </div>
    <div class="hero-text">
     <h1 class="title">Hi, I am Philia, Front-end Developer</h1>
@@ -55,17 +52,103 @@
 </div>
   </section>
 
-  <script>
-    feather.replace();
+   <!-- Posts Section -->
+   <section>
+    <div class="post-container">
+      <div class="title-container">
+        <h2>Recent Posts</h2>
+        <h6>View All</h6>
+      </div>
+      <div class="flex-container">
+        <div class="posts">
+          <h2 id="title" class="post-title">Making a design system from scratch</h2>
+          <div class="date-topic">
+            <p id="date" class="date">12 Feb 2020</p>
+            <span>|</span>
+            <p id="topic" class=""topic>Design, Pattern</p>
+          </div>
+          <p id="content" class="content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+        <div class="posts">
+          <h2 id="title" class="post-title">Making a design system from scratch</h2>
+          <div class="date-topic">
+            <p id="date" class="date">12 Feb 2020</p>
+             <span>|</span>
+            <p id="topic" class=""topic>Figma, Icon Design</p>
+          </div>
+          <p id="content" class="content">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+      </div>
+    </div>
+   </section>
 
-    function showOverlay() {
-            document.getElementById("overlay").style.display = "flex";
-            document.getElementById("overlay").classList.add("slide-from-right"); // Add the CSS class for sliding from right to left
-        }
-        function hideOverlay() {
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
-  </script>
+    <!-- Featured Works Section -->
+    <section>
+      <div class="featured_container">
+        <h2 class="featured-title">Featured Works</h2>
+        <div class="flex_wrapper">
+        <div class="wrapper">
+          <img src="./images/dashboard.svg" alt="image of work" class="featured-image">
+          <div class="content_container">
+            <h4 class="work-title">Designing Dashboards</h4>
+            <div class="year-name">
+              <p class="year">2020</p>
+              <p class="name">Dashboard</p>
+            </div>
+              <p class="featured-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <img src="./images/portrait.svg" alt="image of work" class="featured-image">
+          <div class="content_container">
+            <h4 class="work-title">Vibrant Portraits of 2020</h4>
+            <div class="year-name">
+              <p class="year">2018</p>
+              <p class="name">Illustration</p>
+            </div>
+              <p class="featured-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <img src="./images/Malayalam.svg" alt="image of work" class="featured-image">
+          <div class="content_container">
+            <h4 class="work-title">36 Days of Malayalam type</h4>
+            <div class="year-name">
+              <p class="year">2018</p>
+              <p class="name">Typography</p>
+            </div>
+              <p class="featured-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div>
+          <ul class="socials">
+            <li>
+              <a href=""><img src="./images/fb.svg" alt="facebook icon" class="icon"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/insta.svg" alt="instagram icon" class="icon"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/twitter.svg" alt="twitter icon" class="icon"></a>
+            </li>
+            <li>
+              <a href=""><img src="./images/Linkedin.svg" alt="linkedin icon" class="icon"></a>
+            </li>
+          </ul>  
+        </div>
+        <div class="copyright">
+          Copyright ©2023 All rights reserved 
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
