@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap");
 
 :root {
-  --primary-color: #21243D;
+  --primary-color: #21243d;
   --link-color: #000;
-  --button-background: #FF6464;
-  --button-border: #FF6464;
-  --button-text: #FFF;
+  --button-background: #ff6464;
+  --button-border: #ff6464;
+  --button-text: #fff;
   --overlay-background: rgba(0, 0, 0, 0.8);
-  --Post-Background: #EDF7FA;
-  --View-Color: #00A8CC;
-  --Copyright-Color: #21243D;
-  --Light: #8695A4;
+  --Post-Background: #edf7fa;
+  --View-Color: #00a8cc;
+  --Copyright-Color: #21243d;
+  --Light: #ff646479;
 }
 
 * {
@@ -20,11 +20,11 @@
 }
 
 body {
-    height: 100vh;
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
-    overflow-x: hidden; 
-    font-family: 'Heebo', sans-serif;
+  height: 100vh;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  font-family: "Heebo", sans-serif;
 }
 
 body::-webkit-scrollbar {

@@ -3,12 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Philia's Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.avif"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles//navbar.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/posts.css" />
     <link rel="stylesheet" href="./styles/featured.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="./js/navbar.js" defer></script>
@@ -31,10 +37,9 @@
           <!-- Overlay for Small Screens-->
           <div id="overlay">
             <ul>
-              <!-- <li></li> -->
-              <li><a href="#">Works</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#works">Works</a></li>
+              <!-- <li><a href="#">Blog</a></li> -->
+              <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="close_icon">
               <i data-feather="x" onclick="hideOverlay()"></i>
@@ -57,17 +62,29 @@
         <div class="hero-text">
           <h1 class="title">Hi, I am Philia, Front-end Developer</h1>
           <p class="description">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
+            With 3 years of experience in collaborative, fast-paced
+            environments, I specialize in crafting visually engaging and
+            user-centered web applications. Skilled in HTML, CSS, JavaScript,
+            React, and TypeScript, I transform complex requirements into
+            streamlined, responsive solutions that elevate user engagement. My
+            commitment to efficiency and staying current with industry trends
+            has led to a 15% reduction in feature development time and an
+            overall 10% improvement in application performance, delivering
+            impactful results for both users and stakeholders.
           </p>
-          <button type="button" class="hero-btn">Download Resume</button>
+          <a
+            href="https://docs.google.com/document/d/1l6xoK8Hgolc5fgf9dnQdEOZU3knR2meX/edit?usp=sharing&ouid=105134390569711132621&rtpof=true&sd=true"
+            target="_blank"
+            class="hero-btn"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
     </section>
 
     <!-- Posts Section -->
-    <section>
+    <!-- <section>
       <div class="post-container">
         <div class="title-container">
           <h2>Recent Posts</h2>
@@ -106,24 +123,29 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Featured Works Section -->
-    <section>
+    <section id="works">
       <div class="featured_container">
         <h2 class="featured-title">Featured Works</h2>
         <div class="flex_wrapper">
           <div class="wrapper">
             <img
-              src="./images/dashboard.svg"
+              src="./images/pulse.png"
               alt="image of work"
               class="featured-image"
             />
             <div class="content_container">
-              <h4 class="work-title">Designing Dashboards</h4>
-              <div class="year-name">
-                <p class="year">2020</p>
-                <p class="name">Dashboard</p>
+              <h4 class="work-title">Service Management App</h4>
+              <div class="project-container">
+                <a
+                  href="https://pulsedapp.com/"
+                  target="_blank"
+                  class="view-project"
+                  >View Project</a
+                >
+                <p class="name">Pulse</p>
               </div>
               <p class="featured-description">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -135,15 +157,20 @@
 
           <div class="wrapper">
             <img
-              src="./images/portrait.svg"
+              src="./images/aggies.png"
               alt="image of work"
               class="featured-image"
             />
             <div class="content_container">
-              <h4 class="work-title">Vibrant Portraits of 2020</h4>
-              <div class="year-name">
-                <p class="year">2018</p>
-                <p class="name">Illustration</p>
+              <h4 class="work-title">Restaurant App</h4>
+              <div class="project-container">
+                <a
+                  href="https://aggiesbargrill.com/"
+                  target="_blank"
+                  class="view-project"
+                  >View Project</a
+                >
+                <p class="name">Aggies Bar and Grill Restaurant</p>
               </div>
               <p class="featured-description">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -155,15 +182,70 @@
 
           <div class="wrapper">
             <img
-              src="./images/Malayalam.svg"
+              src="./images/inovtech.png"
               alt="image of work"
               class="featured-image"
             />
             <div class="content_container">
-              <h4 class="work-title">36 Days of Malayalam type</h4>
-              <div class="year-name">
-                <p class="year">2018</p>
-                <p class="name">Typography</p>
+              <h4 class="work-title">Robotics App</h4>
+              <div class="project-container">
+                <a
+                  href="https://inovtechsc.com/"
+                  target="_blank"
+                  class="view-project"
+                  >View Project</a
+                >
+                <p class="name">Inovtech</p>
+              </div>
+              <p class="featured-description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <img
+              src="./images/ogidi.png"
+              alt="image of work"
+              class="featured-image"
+            />
+            <div class="content_container">
+              <h4 class="work-title">Hoodies E-Commerce App</h4>
+              <div class="project-container">
+                <a
+                  href="https://hoodie-ecommerce.vercel.app/"
+                  target="_blank"
+                  class="view-project"
+                  >View Project</a
+                >
+                <p class="name">Ogidi Brown</p>
+              </div>
+              <p class="featured-description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <img
+              src="./images/audiophile.png"
+              alt="image of work"
+              class="featured-image"
+            />
+            <div class="content_container">
+              <h4 class="work-title">Audiophile E-Commerce App</h4>
+              <div class="project-container">
+                <a
+                  href="https://audiophile-ecommerce-live.vercel.app/"
+                  target="_blank"
+                  class="view-project"
+                  >View Project</a
+                >
+                <p class="name">Audiophile E-Commerce</p>
               </div>
               <p class="featured-description">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -176,43 +258,64 @@
       </div>
     </section>
 
+    <section id="contact">
+      <div class="contact-container">
+        <p class="contact-title">Lets Talk!</p>
+        <div class="contact-flex">
+          <i data-feather="map-pin" class="contact-icon"></i>
+          <p class="contact-type">Accra-Ghana</p>
+        </div>
+        <div class="contact-flex">
+          <i data-feather="phone" class="contact-icon"></i>
+          <p class="contact-type">+233 249588151 | +233 551824187</p>
+        </div>
+        <div class="contact-flex">
+          <i data-feather="mail" class="contact-icon"></i>
+          <p class="contact-type">philiahammmond@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer Section -->
     <footer>
       <div class="footer-container">
         <div>
           <ul class="socials">
             <li>
-              <a href=""
-                ><img src="./images/fb.svg" alt="facebook icon" class="icon"
-              /></a>
-            </li>
-            <li>
-              <a href=""
+              <a href="https://github.com/gogurlbaby"
                 ><img
-                  src="./images/insta.svg"
-                  alt="instagram icon"
+                  src="./images/github-logo.png"
+                  alt="github icon"
+                  width="35"
+                  height="35"
                   class="icon"
               /></a>
             </li>
             <li>
-              <a href=""
-                ><img
-                  src="./images/twitter.svg"
-                  alt="twitter icon"
-                  class="icon"
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img
+              <a
+                href="https://www.linkedin.com/in/philiahammond/"
+                target="_blank"
+              >
+                <img
                   src="./images/Linkedin.svg"
                   alt="linkedin icon"
+                  class="icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><img
+                  src="./images/x.png"
+                  alt="twitter icon"
+                  width="40"
+                  height="40"
                   class="icon"
               /></a>
             </li>
           </ul>
         </div>
-        <div class="copyright">Copyright ©2023 All rights reserved</div>
+        <div class="copyright">Copyright ©2024 All rights reserved</div>
       </div>
     </footer>
   </body>

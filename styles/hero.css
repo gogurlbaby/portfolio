@@ -1,94 +1,95 @@
 .hero-section {
-    margin-top: 2rem;
-    padding: 20px 40px;
+  margin-top: 2rem;
+  padding: 20px 40px;
 }
 
 .hero-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
 }
 
 .image_wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 .hero-image {
-    width: 243px;
-    border-radius: 170.859px;
+  width: 243px;
+  border-radius: 170.859px;
 }
 
 .hero-text {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 .title {
-    color: var(--primary-color);
-    text-align: center !important;
-    font-family: "Heebo", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 40px; 
-    margin-bottom: 1rem;
+  color: var(--primary-color);
+  text-align: center !important;
+  font-family: "Heebo", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 1rem;
 }
 
 .description {
-    color: var(--primary-color);
-    text-align: center !important;
-    font-family: "Heebo", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
+  color: var(--primary-color);
+  text-align: center !important;
+  font-family: "Heebo", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .hero-btn {
-    border-radius: 2px;
-    background: var(--button-background);
-    border: 1px solid var(--button-border);
-    padding: 8px 25px;
-    color: var(--button-text);
-    font-family: "Heebo", sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    cursor: pointer;
+  text-decoration: none;
+  border-radius: 2px;
+  background: var(--button-background);
+  border: 1px solid var(--button-border);
+  padding: 8px 25px;
+  color: var(--button-text);
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
- /* Media Queries */
+/* Media Queries */
 @media (min-width: 992px) {
-    .hero-section {
+  .hero-section {
     margin-top: 2rem;
     padding: 40px 120px;
-}
+  }
 
-.hero-container {
+  .hero-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
-}
+  }
 
-.image_wrapper {
+  .image_wrapper {
     order: 2;
-}
+  }
 
-.hero-image {
+  .hero-image {
     width: 243px;
     border-radius: 243px;
-}
+  }
 
-.hero-text {
+  .hero-text {
     order: 1;
     text-align: left !important;
     margin-top: 1rem;
-}
+  }
 
-.title {
+  .title {
     text-align: left !important;
     font-size: 2.75rem;
     font-weight: 700;
-    line-height: 60px; 
+    line-height: 60px;
     margin-bottom: 1rem;
-}
+  }
 
-.description {
+  .description {
     text-align: left !important;
- }
+  }
 }

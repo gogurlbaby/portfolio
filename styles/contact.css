@@ -1,0 +1,50 @@
+.contact-container {
+  padding: 2.5rem 1.5rem;
+}
+
+.contact-title {
+  color: var(--button-background);
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-flex {
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  color: var(--button-background);
+}
+
+.contact-type {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-size: 500;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .contact-container {
+    padding: 2rem 3rem 7.5rem;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-flex {
+  }
+
+  .contact-icon {
+  }
+
+  .contact-type {
+    font-size: 1.5rem;
+  }
+}
