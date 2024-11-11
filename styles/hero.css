@@ -1,6 +1,6 @@
 .hero-section {
-  margin-top: 2rem;
   padding: 20px 40px;
+  margin-bottom: 1.5rem;
 }
 
 .hero-container {
@@ -11,6 +11,7 @@
 
 .image_wrapper {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .hero-image {
@@ -52,10 +53,25 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 /* Media Queries */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+  .hero-text {
+    text-align: left !important;
+  }
+
+  .title {
+    text-align: left !important;
+  }
+
+  .description {
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 1200px) {
   .hero-section {
     margin-top: 2rem;
     padding: 40px 120px;
@@ -77,19 +93,13 @@
 
   .hero-text {
     order: 1;
-    text-align: left !important;
     margin-top: 1rem;
   }
 
   .title {
-    text-align: left !important;
     font-size: 2.75rem;
     font-weight: 700;
     line-height: 60px;
     margin-bottom: 1rem;
-  }
-
-  .description {
-    text-align: left !important;
   }
 }

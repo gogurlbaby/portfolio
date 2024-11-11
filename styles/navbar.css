@@ -1,5 +1,6 @@
 nav {
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .logo {
@@ -10,7 +11,7 @@ nav {
 
 .logo a {
   text-decoration: none;
-  color: var(--button-background);
+  color: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -50,7 +51,7 @@ nav {
 
   li a {
     text-decoration: none;
-    color: var(--button-text);
+    color: var(--primary-text-color);
     font-size: 24px;
     font-family: "Heebo", sans-serif;
   }

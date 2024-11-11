@@ -3,6 +3,15 @@
   padding: 2rem 4.5rem;
 }
 
+.footer-title {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Heebo", sans-serif;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .socials {
   display: flex;
   justify-content: center;

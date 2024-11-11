@@ -1,9 +1,9 @@
 .contact-container {
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 1.5rem 0;
 }
 
 .contact-title {
-  color: var(--button-background);
+  color: var(--secondary-color);
   font-size: 2rem;
   font-weight: 600;
   font-family: "Heebo", sans-serif;
@@ -18,7 +18,7 @@
 .contact-icon {
   width: 100%;
   margin-bottom: 0.5rem;
-  color: var(--button-background);
+  color: var(--secondary-color);
 }
 
 .contact-type {
@@ -36,12 +36,6 @@
 
   .contact-title {
     font-size: 2.5rem;
-  }
-
-  .contact-flex {
-  }
-
-  .contact-icon {
   }
 
   .contact-type {
