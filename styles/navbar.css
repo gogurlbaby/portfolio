@@ -10,7 +10,7 @@ nav {
 
 .logo a {
   text-decoration: none;
-  color: var(--link-color);
+  color: var(--button-background);
   cursor: pointer;
 }
 
