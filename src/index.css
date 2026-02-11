@@ -30,7 +30,7 @@
 
     --border: 220 15% 90%;
     --input: 220 15% 90%;
-    --ring: 160 84% 39%;
+    --ring: 355 100% 70%;
 
     --radius: 0.75rem;
 
@@ -71,7 +71,7 @@
 
     --border: 220 20% 16%;
     --input: 220 20% 16%;
-    --ring: 160 70% 45%;
+    --ring: 355 100% 70%;
 
     --sidebar-background: 220 25% 8%;
     --sidebar-foreground: 220 15% 90%;
@@ -100,10 +100,12 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-emerald-500;
+    @apply bg-clip-text text-transparent 
+           bg-gradient-to-r 
+           from-[#ff6464] via-[#ff7a7a] to-[#ff4d4d];
   }
 
   .dark .text-gradient {
-    @apply from-primary to-emerald-400;
+    @apply from-[#ff7a7a] via-[#ff6464] to-[#ff5252];
   }
 }

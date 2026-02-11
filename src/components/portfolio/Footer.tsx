@@ -8,13 +8,25 @@ export function Footer() {
           © {new Date().getFullYear()} Philia Hammond. Built with React.
         </p>
         <div className="flex items-center gap-4">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
+          <a
+            href="#"
+            className="text-muted-foreground hover:text-[#ff6464] transition-colors"
+            aria-label="GitHub"
+          >
             <Github className="h-5 w-5" />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LinkedIn">
+          <a
+            href="#"
+            className="text-muted-foreground hover:text-[#ff6464] transition-colors"
+            aria-label="LinkedIn"
+          >
             <Linkedin className="h-5 w-5" />
           </a>
-          <a href="mailto:hello@philiahammond.dev" className="text-muted-foreground hover:text-primary transition-colors" aria-label="Email">
+          <a
+            href="mailto:hello@philiahammond.dev"
+            className="text-muted-foreground hover:text-[#ff6464] transition-colors"
+            aria-label="Email"
+          >
             <Mail className="h-5 w-5" />
           </a>
         </div>

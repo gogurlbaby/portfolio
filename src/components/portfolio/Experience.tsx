@@ -41,31 +41,43 @@ export function Experience() {
   return (
     <AnimatedSection id="experience" className="py-20 md:py-28 bg-muted/40">
       <div className="container mx-auto px-4 md:px-8 max-w-3xl">
-        <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">Experience</h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-12 text-foreground">Where I've worked</h3>
+        <h2 className="text-sm font-semibold uppercase tracking-widest text-[#ff6464] mb-3">
+          Experience
+        </h2>
+        <h3 className="text-3xl md:text-4xl font-bold mb-12 text-foreground">
+          Where I've worked
+        </h3>
 
         <div className="relative">
-          {/* Timeline line */}
           <div className="absolute left-0 top-2 bottom-2 w-px bg-border md:left-0" />
 
           <div className="space-y-12">
             {EXPERIENCES.map((exp, i) => (
               <div key={i} className="relative pl-8">
-                {/* Dot */}
-                <div className="absolute left-0 top-2 w-2.5 h-2.5 rounded-full bg-primary -translate-x-1" />
+                <div className="absolute left-0 top-2 w-2.5 h-2.5 rounded-full bg-[#ff6464] -translate-x-1" />
 
                 <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-3">
                   <div>
-                    <h4 className="text-lg font-semibold text-foreground">{exp.company}</h4>
-                    <p className="text-sm text-primary font-medium">{exp.role}{exp.product ? ` · ${exp.product}` : ""}</p>
+                    <h4 className="text-lg font-semibold text-foreground">
+                      {exp.company}
+                    </h4>
+                    <p className="text-sm text-[#ff6464] font-medium">
+                      {exp.role}
+                      {exp.product ? ` · ${exp.product}` : ""}
+                    </p>
                   </div>
-                  <span className="text-sm text-muted-foreground mt-1 sm:mt-0 whitespace-nowrap">{exp.period}</span>
+                  <span className="text-sm text-muted-foreground mt-1 sm:mt-0 whitespace-nowrap">
+                    {exp.period}
+                  </span>
                 </div>
 
                 <ul className="space-y-2">
                   {exp.points.map((point, j) => (
-                    <li key={j} className="text-sm text-muted-foreground flex gap-2">
-                      <span className="text-primary mt-1.5 shrink-0">•</span>
+                    <li
+                      key={j}
+                      className="text-sm text-muted-foreground flex gap-2"
+                    >
+                      <span className="text-[#ff6464] mt-1.5 shrink-0">•</span>
                       {point}
                     </li>
                   ))}

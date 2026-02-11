@@ -18,36 +18,49 @@ export function Contact() {
   return (
     <AnimatedSection id="contact" className="py-20 md:py-28 bg-muted/40">
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
-        <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-3">Contact</h2>
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Let's build something together.</h3>
+        <h2 className="text-sm font-semibold uppercase tracking-widest text-[#ff6464] mb-3">
+          Contact
+        </h2>
+        <h3 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
+          Let's build something together.
+        </h3>
         <p className="text-muted-foreground mb-12 max-w-lg">
           Have a project in mind or just want to connect? Drop me a message.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Links */}
           <div className="space-y-6">
-            <a href="mailto:hello@philiahammond.dev" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
-              <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-primary transition-colors">
-                <Mail className="h-5 w-5 text-primary" />
+            <a
+              href="mailto:hello@philiahammond.dev"
+              className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-[#ff6464] transition-colors">
+                <Mail className="h-5 w-5 text-[#ff6464]" />
               </div>
-              <span className="text-sm font-medium">hello@philiahammond.dev</span>
+              <span className="text-sm font-medium">
+                hello@philiahammond.dev
+              </span>
             </a>
-            <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
-              <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-primary transition-colors">
-                <Linkedin className="h-5 w-5 text-primary" />
+            <a
+              href="#"
+              className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-[#ff6464] transition-colors">
+                <Linkedin className="h-5 w-5 text-[#ff6464]" />
               </div>
               <span className="text-sm font-medium">LinkedIn</span>
             </a>
-            <a href="#" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group">
-              <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-primary transition-colors">
-                <Github className="h-5 w-5 text-primary" />
+            <a
+              href="#"
+              className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
+            >
+              <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-[#ff6464] transition-colors">
+                <Github className="h-5 w-5 text-[#ff6464]" />
               </div>
               <span className="text-sm font-medium">GitHub</span>
             </a>
           </div>
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input
               placeholder="Your name"
@@ -72,7 +85,17 @@ export function Contact() {
               required
               className="bg-card resize-none"
             />
-            <Button type="submit" size="lg" className="w-full">
+            <Button
+              type="submit"
+              size="lg"
+              className="w-full
+             bg-[#ff6464]
+             text-white
+             hover:bg-[#d94f4f]
+             transition-all duration-300
+             hover:scale-[1.02]
+             hover:shadow-lg hover:shadow-[#ff6464]/30"
+            >
               Send Message
             </Button>
           </form>

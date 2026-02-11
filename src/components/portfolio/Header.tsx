@@ -25,10 +25,13 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <header className="sticky top-0 left-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-8">
-        <button onClick={() => scrollTo("hero")} className="text-lg font-bold tracking-tight text-foreground hover:text-primary transition-colors">
-          PH<span className="text-primary">.</span>
+        <button
+          onClick={() => scrollTo("hero")}
+          className="text-lg font-bold tracking-tight text-[#ff6464] transition-all duration-300 hover:opacity-80"
+        >
+          PH<span className="text-[#ff6464]">.</span>
         </button>
 
         {/* Desktop nav */}
@@ -38,10 +41,10 @@ export function Header() {
               key={item.id}
               onClick={() => scrollTo(item.id)}
               className={cn(
-                "px-3 py-2 text-sm font-medium rounded-md transition-colors",
+                "px-3 py-2 text-sm font-medium rounded-md transition-all duration-300",
                 activeSection === item.id
-                  ? "text-primary bg-accent"
-                  : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
+                  ? "text-[#ff6464] bg-[#ff6464]/10"
+                  : "text-muted-foreground hover:text-[#ff6464] hover:bg-[#ff6464]/5",
               )}
             >
               {item.label}
@@ -54,7 +57,7 @@ export function Header() {
             variant="ghost"
             size="icon"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="text-muted-foreground hover:text-foreground"
+            className="text-muted-foreground hover:text-[#ff6464] hover:bg-[#ff6464]/10 transition-all duration-300"
           >
             <Sun className="h-5 w-5 rotate-0 scale-100 transition-transform dark:-rotate-90 dark:scale-0" />
             <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-transform dark:rotate-0 dark:scale-100" />
@@ -64,10 +67,14 @@ export function Header() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden text-muted-foreground"
+            className="md:hidden text-muted-foreground hover:text-[#ff6464] hover:bg-[#ff6464]/10 transition-all duration-300"
             onClick={() => setMobileOpen(!mobileOpen)}
           >
-            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {mobileOpen ? (
+              <X className="h-5 w-5" />
+            ) : (
+              <Menu className="h-5 w-5" />
+            )}
           </Button>
         </div>
       </div>
@@ -80,10 +87,10 @@ export function Header() {
               key={item.id}
               onClick={() => scrollTo(item.id)}
               className={cn(
-                "block w-full text-left px-3 py-2.5 text-sm font-medium rounded-md transition-colors",
+                "block w-full text-left px-3 py-2.5 text-sm font-medium rounded-md transition-all duration-300",
                 activeSection === item.id
-                  ? "text-primary bg-accent"
-                  : "text-muted-foreground hover:text-foreground"
+                  ? "text-[#ff6464] bg-[#ff6464]/10"
+                  : "text-muted-foreground hover:text-[#ff6464] hover:bg-[#ff6464]/5",
               )}
             >
               {item.label}
