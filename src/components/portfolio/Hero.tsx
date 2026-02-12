@@ -19,7 +19,7 @@ export function Hero() {
            opacity-0 animate-fade-in-up"
           style={{ animationDelay: "0.1s" }}
         >
-          Front-End Developer · Accra, Ghana 🇬🇭
+          Front-End Engineer · Accra, Ghana 🇬🇭
         </div>
 
         <h1
