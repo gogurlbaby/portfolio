@@ -3,8 +3,7 @@ import { AnimatedSection } from "./AnimatedSection";
 const EXPERIENCES = [
   {
     company: "Kakeibo",
-    role: "Front-End Developer",
-    product: "Clean Studio",
+    role: "Front-End Engineer",
     period: "2024 – Present",
     points: [
       "Developing Clean Studio, a core web application for Kakeibo, using React and TypeScript",
@@ -16,7 +15,7 @@ const EXPERIENCES = [
   },
   {
     company: "EggSeed LLC",
-    role: "Part-time Front-End Developer",
+    role: "Front-End Engineer",
     period: "Jun 2022 – Jan 2025",
     points: [
       "Built restaurant and business web applications",
@@ -63,7 +62,6 @@ export function Experience() {
                     </h4>
                     <p className="text-sm text-[#ff6464] font-medium">
                       {exp.role}
-                      {exp.product ? ` · ${exp.product}` : ""}
                     </p>
                   </div>
                   <span className="text-sm text-muted-foreground mt-1 sm:mt-0 whitespace-nowrap">

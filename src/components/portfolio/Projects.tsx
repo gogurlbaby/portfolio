@@ -8,11 +8,13 @@ const PROJECTS = [
     title: "Clean Studio",
     tech: ["React.js", "TypeScript"],
     description:
-      "Core web application for Kakeibo focused on clean architecture, scalable UI systems, and structured authentication flows.",
+      "Core product web application for Kakeibo focused on clean architecture, scalable UI systems, and structured authentication flows.",
 
     image: "/images/cleanstudio.png",
-    liveUrl: "/",
-    codeUrl: "https://github.com/yourusername/cleanstudio",
+    liveUrl: null,
+    liveStatus: "coming_soon",
+    codeUrl: null,
+    codeVisibility: "private",
   },
   {
     title: "Pulse Service Management",
@@ -21,7 +23,9 @@ const PROJECTS = [
       "8-page service app built in 2 months, increasing sign-ups by ~20%.",
     image: "/images/pulse.png",
     liveUrl: "https://pulsedapp.com/",
-    codeUrl: "https://github.com/yourusername/cleanstudio",
+    liveStatus: "live",
+    codeUrl: null,
+    codeVisibility: "private",
   },
   {
     title: "InovTech Web App",
@@ -30,7 +34,9 @@ const PROJECTS = [
       "SEO-optimized app using SSR, SSG, and CSR; integrated volunteer application API increasing accessibility by ~20%.",
     image: "/images/inovtech.png",
     liveUrl: "https://www.inovtechsc.com/",
-    codeUrl: "https://github.com/yourusername/cleanstudio",
+    liveStatus: "live",
+    codeUrl: null,
+    codeVisibility: "private",
   },
   {
     title: "Aggies Bar & Grill",
@@ -38,8 +44,10 @@ const PROJECTS = [
     description:
       "SEO-focused restaurant app with customer contact and feedback features.",
     image: "/images/aggies.png",
-    liveUrl: "/",
-    codeUrl: "https://github.com/yourusername/cleanstudio",
+    liveUrl: null,
+    liveStatus: "down",
+    codeUrl: null,
+    codeVisibility: "private",
   },
   {
     title: "Ogidi Brown E-Commerce",
@@ -48,7 +56,9 @@ const PROJECTS = [
       "6-page e-commerce app contributing to ~25% growth in sales and engagement.",
     image: "/images/ogidi.png",
     liveUrl: "https://hoodie-ecommerce.vercel.app/",
+    liveStatus: "live",
     codeUrl: "https://github.com/ogidibrown/hoodie-ecommerce",
+    codeVisibility: "public",
   },
   {
     title: "Audiophile E-Commerce",
@@ -57,17 +67,10 @@ const PROJECTS = [
       "5-page shopping app improving UX and increasing sales by ~15%.",
     image: "/images/audiophile.png",
     liveUrl: "https://audiophile-ecommerce-live.vercel.app/",
+    liveStatus: "live",
     codeUrl: "https://github.com/gogurlbaby/audiophile_ecommerce",
+    codeVisibility: "public",
   },
-];
-
-const COLORS = [
-  "from-primary/20 to-primary/5",
-  "from-blue-500/15 to-blue-500/5",
-  "from-violet-500/15 to-violet-500/5",
-  "from-amber-500/15 to-amber-500/5",
-  "from-rose-500/15 to-rose-500/5",
-  "from-cyan-500/15 to-cyan-500/5",
 ];
 
 export function Projects() {
@@ -82,9 +85,9 @@ export function Projects() {
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {PROJECTS.map((project, i) => (
+          {PROJECTS.map((project) => (
             <div
-              key={i}
+              key={project.title}
               className="group rounded-xl border border-border bg-card overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               <div className="h-40 overflow-hidden">
@@ -93,10 +96,6 @@ export function Projects() {
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-
-                <span className="text-3xl font-bold text-foreground/20">
-                  {project.title.charAt(0)}
-                </span>
               </div>
 
               <div className="p-5">
@@ -123,43 +122,71 @@ export function Projects() {
                 </div>
 
                 <div className="flex gap-2">
-                  <Button
-                    asChild
-                    size="sm"
-                    variant="outline"
-                    className="gap-1.5 text-xs
+                  {project.liveStatus === "live" && project.liveUrl ? (
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="outline"
+                      className="gap-1.5 text-xs
              hover:bg-[#ff6464]/10
              hover:text-[#ff6464]
              hover:border-[#ff6464]/50
              transition-all duration-300"
-                  >
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
-                      <ExternalLink className="h-3.5 w-3.5" /> Live Demo
-                    </a>
-                  </Button>
-                  <Button
-                    asChild
-                    size="sm"
-                    variant="ghost"
-                    className="gap-1.5 text-xs
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-3.5 w-3.5" /> Live Demo
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      disabled
+                      className="text-xs"
+                    >
+                      {project.liveStatus === "down"
+                        ? "Temporarily Offline"
+                        : "Coming Soon"}
+                    </Button>
+                  )}
+                  {project.codeVisibility === "public" && project.codeUrl ? (
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="ghost"
+                      className="gap-1.5 text-xs
              text-muted-foreground
              hover:text-[#ff6464]
              hover:bg-[#ff6464]/10
              transition-all duration-300
              hover:scale-[1.03]"
-                  >
-                    <a
-                      href={project.codeUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
-                      <Github className="h-3.5 w-3.5" /> Code
-                    </a>
-                  </Button>
+                      <a
+                        href={project.codeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="h-3.5 w-3.5" /> Code
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      disabled
+                      className="text-xs"
+                    >
+                      {project.codeVisibility === "private"
+                        ? "Private Repo"
+                        : project.codeVisibility === "nda"
+                          ? "Org Repo"
+                          : "Code"}
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

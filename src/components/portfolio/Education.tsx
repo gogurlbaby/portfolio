@@ -4,14 +4,23 @@ import { AnimatedSection } from "./AnimatedSection";
 const EDUCATION = [
   {
     icon: Award,
-    title: "Front-End Development Certificates",
-    org: "Azubi Africa, HerTechTrail",
+    title: "AWS re/Start (Cloud Practitioner Track)",
+    org: "AmaliTech · Currently Pursuing",
   },
-  { icon: Award, title: "MERN Full Stack Development", org: "MEST Africa" },
+  {
+    icon: Award,
+    title: "Front-End Development Certificates",
+    org: "Azubi Africa, HerTechTrail · 2023–2024",
+  },
+  {
+    icon: Award,
+    title: "MERN Full Stack Development",
+    org: "MEST Africa · 2021",
+  },
   {
     icon: GraduationCap,
     title: "BSc Home Science (Consumer Science)",
-    org: "University of Ghana",
+    org: "University of Ghana · 2008–2012",
   },
 ];
 

@@ -31,18 +31,20 @@ export function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <a
-              href="mailto:hello@philiahammond.dev"
+              href="mailto:philiahammmond@gmail.com"
               className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
             >
               <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-[#ff6464] transition-colors">
                 <Mail className="h-5 w-5 text-[#ff6464]" />
               </div>
               <span className="text-sm font-medium">
-                hello@philiahammond.dev
+                philiahammmond@gmail.com
               </span>
             </a>
+
             <a
-              href="#"
+              href="https://www.linkedin.com/in/philiahammond/"
+              target="_blank"
               className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
             >
               <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-[#ff6464] transition-colors">
@@ -50,8 +52,10 @@ export function Contact() {
               </div>
               <span className="text-sm font-medium">LinkedIn</span>
             </a>
+
             <a
-              href="#"
+              href="https://github.com/gogurlbaby/"
+              target="_blank"
               className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
             >
               <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-[#ff6464] transition-colors">

@@ -9,21 +9,23 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-4">
           <a
-            href="#"
+            href="https://github.com/gogurlbaby/"
+            target="_blank"
             className="text-muted-foreground hover:text-[#ff6464] transition-colors"
             aria-label="GitHub"
           >
             <Github className="h-5 w-5" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/philiahammond/"
+            target="_blank"
             className="text-muted-foreground hover:text-[#ff6464] transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin className="h-5 w-5" />
           </a>
           <a
-            href="mailto:hello@philiahammond.dev"
+            href="mailto:philiahammmond@gmail.com"
             className="text-muted-foreground hover:text-[#ff6464] transition-colors"
             aria-label="Email"
           >

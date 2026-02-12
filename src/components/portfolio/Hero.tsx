@@ -34,8 +34,8 @@ export function Hero() {
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
         >
-          Front-End Developer with 4+ years of experience crafting performant,
-          user-centered React applications.
+          Front-End Engineer with 4+ years of experience building performant,
+          scalable, and user-centered React applications.
         </p>
 
         <div

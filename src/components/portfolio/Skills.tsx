@@ -12,7 +12,13 @@ const SKILL_CATEGORIES = [
   },
   {
     title: "Styling",
-    skills: ["Tailwind CSS", "Styled Components", "Chakra UI"],
+    skills: [
+      "Tailwind CSS",
+      "Styled Components",
+      "Chakra UI",
+      "Ant Design",
+      "Shadcn",
+    ],
   },
   {
     title: "Tools",
