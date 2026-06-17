@@ -12,27 +12,26 @@ export function About() {
         </h3>
         <div className="space-y-5 text-muted-foreground leading-relaxed text-base md:text-lg">
           <p>
-            I'm a Front-End Engineer with over 4 years of experience building
-            clean, scalable, and user-centered web applications.
+            I'm a Frontend Developer and Technical Product Manager with 4+ years
+            of experience building clean, scalable, and user-centered web
+            applications.
           </p>
           <p>
-            I specialize in React, TypeScript, and modern frontend architecture,
+            I specialise in React, Next.js, and modern frontend architecture,
             with a strong focus on performance, reusability, and intuitive user
-            experiences. Over the years, I've worked in collaborative,
-            product-driven environments, contributing to applications that
-            improved user engagement, reduced development time, enhanced
-            performance, and scaled smoothly as requirements evolved.
+            experiences. I'm AWS Certified Cloud Practitioner, currently
+            expanding into fullstack development and cloud architecture. I'm
+            currently part of the founding team at Uralab — an Africa-first AI
+            lab building agricultural AI models trained on African context.
           </p>
           <p>
-            I'm currently working on{" "}
-            <span className="text-[#ff6464] font-medium">Clean Studio</span>, a
-            core web application being developed for Kakeibo, where I design and
-            implement key frontend systems, authentication flows, and reusable
-            UI components.
+            I lead frontend development and contribute to AWS cloud
+            infrastructure decisions alongside our CTO.
           </p>
           <p>
             I value clarity in code, empathy in design, and building software
-            that solves real problems, not just shipping features.
+            that solves real problems for real people — especially here in
+            Africa.
           </p>
         </div>
       </div>

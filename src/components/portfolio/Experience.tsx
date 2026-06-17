@@ -2,15 +2,25 @@ import { AnimatedSection } from "./AnimatedSection";
 
 const EXPERIENCES = [
   {
+    company: "Uralab",
+    role: "Frontend Engineer & Technical Product Manager",
+    period: "June 2026 – Present",
+    points: [
+      "Leading frontend development for an Africa-first AI lab building agricultural AI models",
+      "Architecting company website from scratch using Next.js",
+      "Collaborating with CTO on AWS cloud infrastructure and AI deployment decisions",
+      "Contributing to product roadmap and technical direction as TPM",
+    ],
+  },
+  {
     company: "Kakeibo",
     role: "Front-End Engineer",
-    period: "2024 – Present",
+    period: "Oct 2024 – May 2026",
     points: [
-      "Developing Clean Studio, a core web application for Kakeibo, using React and TypeScript",
-      "Designing and organizing authentication flows and reusable component systems",
-      "Participating in frontend architecture decisions focused on scalability and maintainability",
-      "Collaborating on user flows, feature prioritization, and execution strategy",
-      "Applying performance and accessibility best practices across the application",
+      "Built and launched CleanStudio, an AI-powered data platform using React and Next.js",
+      "Architected reusable component systems reducing UI development time",
+      "Integrated frontend with backend APIs and WebSocket real-time connections",
+      "Contributed to frontend architecture documentation and code reviews",
     ],
   },
   {
@@ -75,7 +85,7 @@ export function Experience() {
                       key={j}
                       className="text-sm text-muted-foreground flex gap-2"
                     >
-                      <span className="text-[#ff6464] mt-1.5 shrink-0">•</span>
+                      <span className="text-[#ff6464] mt-0 shrink-0">•</span>
                       {point}
                     </li>
                   ))}

@@ -27,6 +27,7 @@ const SKILL_CATEGORIES = [
       "GitHub",
       "Jira",
       "Bitbucket",
+      "AWS",
       "Slack",
       "Discord",
       "Google Workspace",

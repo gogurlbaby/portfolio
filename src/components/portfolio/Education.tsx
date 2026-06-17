@@ -4,8 +4,8 @@ import { AnimatedSection } from "./AnimatedSection";
 const EDUCATION = [
   {
     icon: Award,
-    title: "AWS re/Start (Cloud Practitioner Track)",
-    org: "AmaliTech · Currently Pursuing",
+    title: "AWS Cloud Practioner - Certified",
+    org: "AmaliTech · 2026",
   },
   {
     icon: Award,

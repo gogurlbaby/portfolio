@@ -19,25 +19,25 @@ export function Hero() {
            opacity-0 animate-fade-in-up"
           style={{ animationDelay: "0.1s" }}
         >
-          Front-End Engineer · Accra, Ghana 🇬🇭
+          Frontend Developer & Technical Product Manager · Accra, Ghana 🇬🇭
         </div>
 
         <h1
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 opacity-0 animate-fade-in-up"
           style={{ animationDelay: "0.25s" }}
         >
-          Building clean, scalable web products that turn ideas into{" "}
-          <span className="text-gradient">reliable user experiences.</span>
+          Building clean, scalable web products for an{" "}
+          <span className="text-gradient"> AI-powered Africa.</span>
         </h1>
-
         <p
           className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in-up"
           style={{ animationDelay: "0.4s" }}
         >
-          Front-End Engineer with 4+ years of experience building performant,
-          scalable, and user-centered React applications.
+          Frontend Developer with 4+ years of experience building
+          production-ready React and Next.js applications. AWS Certified Cloud
+          Practitioner. Currently co-building Uralab, an Africa-first AI lab
+          focused on agricultural intelligence.
         </p>
-
         <div
           className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-in-up"
           style={{ animationDelay: "0.55s" }}
@@ -67,7 +67,7 @@ export function Hero() {
              hover:scale-[1.02]"
           >
             <a
-              href="https://docs.google.com/document/d/1l6xoK8Hgolc5fgf9dnQdEOZU3knR2meX/edit?usp=sharing&ouid=105134390569711132621&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1JY0eoncn0sSdLyG9j-vK1zyC52eFb3QJPqePdCN06vo/edit?tab=t.0"
               target="_blank"
             >
               {" "}
